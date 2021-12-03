@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=DM+Sans:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+}
+
+.container h1,
+.container p {
+  padding: 0.5rem 0;
+}
+
+.container .box {
+  margin: 0.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .box select {
+  outline: none;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.container .box select:hover {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.01);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.01);
+}
+
+.container .box select option {
+  font-size: 0.75rem;
+}
+
+.container .box input {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  font-family: "DM Sans", sans-serif;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.container .box .base-input {
+  position: relative;
+}
+
+.container .box .base-input .line {
+  position: absolute;
+  left: 1rem;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  border-radius: 1rem;
+  background: #000;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.container .box .base-input input:focus + .line {
+  width: calc(100% - 1rem);
+}
+
+.container input[type="submit"] {
+  background: #000;
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  margin: 0.5rem 0;
+}
+
+.alert {
+  width: 100%;
+  padding: 1rem 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  background: #8b8b8b;
+  color: #fff;
+  border-radius: 0.5rem 0.5rem 0 0;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.alert.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+/*# sourceMappingURL=main.css.map */

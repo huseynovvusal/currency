@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Valyuta</title>
+  </head>
+  <body>
+    <div class="alert">Xahiş olunur boşluğu doldurun.</div>
+    <div class="container">
+      <form id="form">
+        <h1>Valyuta</h1>
+        <p>Yenilənmə tarixi <span></span></p>
+        <div class="base box">
+          <select>
+            <option value="Eur">EUR</option>
+            <option value="Usd">USD</option>
+            <option value="Azn" selected>AZN</option>
+            <option value="Try">TRY</option>
+            <option value="Rub">RUB</option>
+            <option value="Gbp">CBP</option>
+            <option value="Irr">IRR</option>
+          </select>
+          <div class="base-input">
+            <input class="base" type="text" placeholder="Miqdar" />
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="currency box">
+          <select>
+            <option value="Eur">EUR</option>
+            <option value="Usd" selected>USD</option>
+            <option value="Azn">AZN</option>
+            <option value="Try">TRY</option>
+            <option value="Rub">RUB</option>
+            <option value="Gbp">CBP</option>
+            <option value="Irr">IRR</option>
+          </select>
+          <input
+            type="text"
+            placeholder="Miqdar"
+            readonly
+            style="cursor: default"
+            maxlength="10"
+          />
+        </div>
+        <input type="submit" value="Çevir" />
+      </form>
+    </div>
+
+    <script src="js/currency.js"></script>
+    <script src="js/project.js"></script>
+  </body>
+</html>

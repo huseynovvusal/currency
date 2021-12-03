@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=DM+Sans:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+
+  h1,
+  p {
+    padding: 0.5rem 0;
+  }
+
+  .box {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+
+    select {
+      outline: none;
+      border: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      transition: 300ms;
+
+      &:hover {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.01);
+      }
+
+      option {
+        font-size: 0.75rem;
+      }
+    }
+
+    input {
+      margin-left: 1rem;
+      padding: 0.5rem 1rem;
+      outline: none;
+      border: none;
+      font-family: "DM Sans", sans-serif;
+      transition: 300ms;
+      border-radius: 0.5rem;
+      position: relative;
+    }
+
+    .base-input {
+      position: relative;
+
+      .line {
+        position: absolute;
+        left: 1rem;
+        bottom: 0;
+        width: 0;
+        height: 1px;
+        border-radius: 1rem;
+        background: #000;
+        transition: 300ms;
+      }
+
+      input:focus + .line {
+        width: calc(100% - 1rem);
+      }
+    }
+  }
+
+  input[type="submit"] {
+    background: #000;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    margin: 0.5rem 0;
+  }
+}
+
+.alert {
+  width: 100%;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  background: #8b8b8b;
+  color: #fff;
+  border-radius: 0.5rem 0.5rem 0 0;
+  transition: 300ms ease-in-out;
+
+  &.active {
+    transform: translateY(0);
+  }
+}
